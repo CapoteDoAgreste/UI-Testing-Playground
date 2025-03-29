@@ -1,17 +1,13 @@
-describe("template spec", () => {
+import dynamicButton from "../support/pages/dynamicButton";
+
+describe("Clicking in a button with a dynamic ID", () => {
   it("Enter in dynamic ID screen", () => {
-    cy.visit("");
-
-    cy.get("a").contains("Dynamic ID").click();
-
-    cy.url().then((url) => {
-      cy.wrap(url).should("eql", "https://uitestingplayground.com/dynamicid");
-    });
+    dynamicButton.enterInDymicButtonScreen();
   });
   it("Click using css selector", () => {
-    cy.get(".btn-primary").click();
+    dynamicButton.clickWithCssSelector();
   });
   it("Click using contains", () => {
-    cy.get("button").contains("Button with Dynamics ID").click();
+    dynamicButton.clickWithContains();
   });
 });
