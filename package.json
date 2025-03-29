@@ -1,0 +1,15 @@
+{
+  "name": "uitestingplayground",
+  "version": "1.0.0",
+  "description": "Just a projecto to portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tales de Lima Filho",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^14.2.1",
+    "typescript": "^5.8.2"
+  }
+}
