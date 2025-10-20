@@ -6,4 +6,5 @@ export default class MainMenuPage {
   };
 
   openDynamicButton = () => cy.get("a").contains("Dynamic ID");
+  openClassAttribute = () => cy.get("a").contains("Class Attribute");
 }

@@ -2,7 +2,7 @@ import MainMenuPage from "../pages/MainMenuPage";
 import generalFunctions from "./generalFunctions";
 
 export default new (class checkPaths {
-  page = new MainMenuPage();
+  private page = new MainMenuPage();
   emptyPathLogo() {
     this.page.navbar.logo().click();
     generalFunctions.checkUrl("https://uitestingplayground.com/");

@@ -1,9 +1,6 @@
 import checkPaths from "../support/flows/checkPaths";
 
 describe("Checking Url paths", () => {
-  before(() => {
-    cy.visit("");
-  });
   it("empty path clicking on logo", () => {
     checkPaths.emptyPathLogo();
   });
