@@ -1,4 +1,4 @@
-import checkPaths from "../support/pages/checkPaths";
+import checkPaths from "../support/flows/checkPaths";
 
 describe("Checking Url paths", () => {
   before(() => {

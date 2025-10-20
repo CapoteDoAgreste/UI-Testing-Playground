@@ -1,16 +1,18 @@
+import MainMenuPage from "../pages/MainMenuPage";
 import generalFunctions from "./generalFunctions";
 
 export default new (class checkPaths {
+  page = new MainMenuPage();
   emptyPathLogo() {
-    cy.get(".navbar-brand").click();
+    this.page.navbar.logo().click();
     generalFunctions.checkUrl("https://uitestingplayground.com/");
   }
   homePath() {
-    cy.get(".nav-item").contains("Home").click();
+    this.page.navbar.home().click();
     generalFunctions.checkUrl("https://uitestingplayground.com/home");
   }
   resourcesPath() {
-    cy.get(".nav-item").contains("Resources").click();
+    this.page.navbar.resources().click();
     generalFunctions.checkUrl("https://uitestingplayground.com/resources");
   }
 })();

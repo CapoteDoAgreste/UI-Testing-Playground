@@ -1,4 +1,4 @@
-import dynamicButton from "../support/pages/dynamicButton";
+import dynamicButton from "../support/flows/dynamicButton";
 
 describe("Clicking in a button with a dynamic ID", () => {
   it("Enter in dynamic ID screen", () => {

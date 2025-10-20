@@ -1,17 +1,19 @@
+import DynamicButtonPage from "../pages/DynamicButtonPage";
 import generalFunctions from "./generalFunctions";
 
 export default new (class DynamicButton {
+  page = new DynamicButtonPage();
   enterInDymicButtonScreen() {
     cy.visit("");
 
-    cy.get("a").contains("Dynamic ID").click();
+    this.page.openDynamicButton().click();
 
     generalFunctions.checkUrl("https://uitestingplayground.com/dynamicid");
   }
   clickWithCssSelector() {
-    cy.get(".btn-primary").click();
+    this.page.buttonCss().click();
   }
   clickWithContains() {
-    cy.get("button").contains("Button with Dynamic ID").click();
+    this.page.buttonContains().click();
   }
 })();
